@@ -44,6 +44,9 @@ section h2 {
   min-height: 300px;
   background: no-repeat center center scroll;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .carousel-item-1 {
@@ -82,21 +85,124 @@ section h2 {
   height: 12px;
 }
 
+.carousel-caption {
+  margin-bottom: 300px;
+}
+
+.carousel-link-btn {
+  font-size: 140%;
+  color: #fff;
+  text-decoration: none;
+  padding: 30px 50px;
+  border: 2px solid #fff;
+}
+
+.carousel-link-btn:hover {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.8);
+}
+
 /* Info */
-.baker-img-container {
-  text-align: right;
+.info-img-container {
   display: flex; 
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
-.baker-img {
-  height: 600px;
-  width: auto;
+.info-img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.baker-info {
+.info-paragraph {
   font-size: 130%;
   padding: 0 70px;
+}
+
+/* Selection and pricing */
+#selection-and-pricing {
+  background-color: #fff0f2;
+}
+
+.selection-row {
+  margin: 70px 0px;
+}
+
+.selection-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selection-sub-heading {
+  text-decoration: underline;
+}
+
+.order-link-row {
+  align-content: center;
+  justify-content: center;
+}
+
+.order-link-btn {
+  font-size: 140%;
+  color: #000;
+  text-decoration: none;
+  padding: 30px 50px;
+  border: 2px solid #000;
+}
+
+.order-link-btn:hover {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Delivery */
+
+/* Contact */
+#contact {
+  background-color: #fff0f2;
+}
+
+.social-media-row {
+  justify-content: center;
+}
+
+.list-inline {
+  display: inline-flex;
+}
+
+.list-inline li {
+  background-color: #fff;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  line-height: 70px;
+  padding-left: 7px;
+  margin: 0px 5px
+}
+
+.list-inline li:hover {
+  background-color: #ffb6c1;
+}
+
+.social-media-link {
+  color: #000;
+}
+
+.list-inline li:hover > .social-media-link {
+  color: #fff;
+}
+
+/* Footer */
+.copyright-row {
+  margin: 5px 0px;
+  /* display: flex; */
+  justify-content: flex-end;
+  
+}
+
+.copyright-row p {
+  font-size: 90%;
+  margin-bottom: 0px;
 }
