@@ -111,12 +111,14 @@ section h2 {
 }
 
 .info-img {
+  max-width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.info-paragraph {
-  font-size: 130%;
-  padding: 0 70px;
+.info-text {
+  font-size: 120%;
+  padding: 0 50px;
+  text-align: justify;
 }
 
 /* Selection and pricing */
@@ -124,8 +126,18 @@ section h2 {
   background-color: #fff0f2;
 }
 
+#selection-and-pricing .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .selection-row {
   margin: 70px 0px;
+}
+
+.selection-text {
+  font-size: 110%;
+  text-align: justify;
 }
 
 .selection-img {
@@ -133,10 +145,16 @@ section h2 {
 }
 
 .selection-sub-heading {
-  text-decoration: underline;
+  font-weight: 600;
 }
 
 /* Delivery */
+.delivery-text {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 120%;
+  text-align: justify;
+}
 
 /* Contact */
 #contact {
@@ -162,6 +180,11 @@ section h2 {
 .contact-detail a {
   text-decoration: none;
   color: #212529;
+  font-size: 110%;
+}
+
+.contact-detail p {
+  font-size: 120%;
 }
 
 .social-media-row {
@@ -197,12 +220,34 @@ section h2 {
 /* Footer */
 .copyright-row {
   margin: 5px 0px;
-  /* display: flex; */
   justify-content: flex-end;
-  
 }
 
 .copyright-row p {
   font-size: 90%;
   margin-bottom: 0px;
+}
+
+@media (max-width: 991px) { 
+  .info-img {
+    max-width: 50%;
+  }
+
+  .info-text {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  .selection-row {
+    margin: 0px;
+  }
+
+  .selection-img {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .delivery-text {
+    padding: 0px;
+  }
 }
