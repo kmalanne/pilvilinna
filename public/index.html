@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
 
@@ -27,8 +27,8 @@
         <a class="nav-item nav-link active" href="#home">Etusivu
           <span class="sr-only">(current)</span>
         </a>
-        <a class="nav-item nav-link" href="#info">Tietoa</a>
-        <a class="nav-item nav-link" href="#selection-and-pricing">Valikoima/hinnasto</a>
+        <a class="nav-item nav-link" href="#info">Leipomosta</a>
+        <a class="nav-item nav-link" href="#selection-and-pricing">Valikoima ja hinnasto</a>
         <a class="nav-item nav-link" href="#delivery">Toimitus</a>
         <a class="nav-item nav-link" href="#contact">Yhteystiedot</a>
         <a class="nav-item nav-link" href="http://annaj-sukkiajasuklaata.blogspot.com/">Blogi</a>
@@ -37,18 +37,18 @@
   </nav>
 
   <header id="home">
-    <div id="carousel-landing" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div id="carousel-landing" class="carousel slide" data-ride="carousel" data-interval="500000">
       <ol class="carousel-indicators carousel-indicators--round">
         <li data-target="#carousel-landing" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-landing" data-slide-to="1"></li>
         <li data-target="#carousel-landing" data-slide-to="2"></li>
         <li data-target="#carousel-landing" data-slide-to="3"></li>
         <li data-target="#carousel-landing" data-slide-to="4"></li>
+        <li data-target="#carousel-landing" data-slide-to="6"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active carousel-item-1">
           <div class="carousel-caption">
-            <h1>LOGO TÄHÄN</h1>
             <a class="carousel-link-btn" href="#contact">OTA YHTEYTTÄ</a>
           </div>
         </div>
@@ -59,6 +59,8 @@
         <div class="carousel-item carousel-item-4">
         </div>
         <div class="carousel-item carousel-item-5">
+        </div>
+        <div class="carousel-item carousel-item-6">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carousel-landing" role="button" data-slide="prev">
@@ -76,24 +78,26 @@
     <div class="container">
       <div class="row">
         <div class="col-lg">
-          <h2>Tietoa</h2>
+          <h2>Leipomosta</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-12 info-img-container">
-          <img class="img-fluid info-img" src="https://images.pexels.com/photos/35666/cooking-baby-only-kitchen.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb"
-            alt="Baker" />
+          <img class="img-fluid info-img" src="content/images/anna.jpg" alt="baker" />
         </div>
-        <p class="col-lg-6 col-md-12 info-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mauris quam, aliquam pretium consequat congue, rhoncus
-          sit amet ante. Morbi quis ligula lectus. In accumsan aliquet urna, eget tincidunt lorem ornare in. Vestibulum vitae
-          ipsum sed enim pellentesque auctor ut ac dui. Aliquam sodales risus tellus, sed vehicula mauris lobortis sit amet.
-          Nunc dictum porttitor rhoncus. Donec imperdiet odio ut varius luctus. Pellentesque nec magna ullamcorper, condimentum
-          mauris in, mattis magna. Maecenas venenatis in justo quis bibendum. Proin tortor leo, ultricies eget metus mattis,
-          mollis convallis ipsum. Maecenas lobortis orci nunc, at hendrerit magna rutrum quis. In tristique nulla sapien,
-          vitae ultrices neque porta eu. Donec at vehicula nisi, quis porta orci. Aenean sed ex suscipit, eleifend diam sit
-          amet, fringilla risus. Duis aliquam dictum lorem.
-        </p>
+        <div class="col-lg-6 col-md-12 info-text">
+          <p>
+            Pilvilinnan leipomo on askel kohti omaa pitkäaikaista haavettani. Olen aina tykännyt tehdä töitä käsilläni, oli se sitten
+            ompelua, neulomista, korttien askartelua tai leipomista. Rakkaus leipomiseen on lähtöisin kotoa ja pienempänä
+            kävin kokkikerhoa tietämättä, että vuosia myöhemmin pitäisin itse kokkikerhoa. Kokkikerhosta, kotoa, keittokirjoista
+            ja blogeista on otettu opiksi ja olenkin itseoppinut leipuri. Kakuilla ja muilla leivonnaisilla on ollut ihana
+            ilahduttaa muita ja jossain kohtaa myös muut halusivat ilahduttaa läheisiään juuri minun valmistamillani kakuilla,
+            jonka tuloksena syntyi Pilvilinnan leipomo.
+          </p>
+          <p class="info-text-signature">
+            Anna Jaatinen
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -107,52 +111,60 @@
       </div>
       <div class="container selection-container">
         <div class="row selection-row">
-          <div class="col-lg-5 ml-auto">
-            <h3 class="selection-sub-heading">Kakku 1</h3>
+          <div class="col-lg-4 selection-text-container">
+            <h3 class="selection-sub-heading">Täytekakut</h3>
             <p class="selection-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mauris quam, aliquam pretium consequat congue, rhoncus
-              sit amet ante. Morbi quis ligula lectus. In accumsan aliquet urna, eget tincidunt lorem ornare in. Vestibulum
-              vitae ipsum sed enim pellentesque auctor ut ac dui. Aliquam sodales risus tellus, sed vehicula mauris lobortis
-              sit amet. Nunc dictum porttitor rhoncus.
+              Jokainen kakku valmistetaan yksilöllisesti asiakkaan toiveiden mukaan, jolloin hinta määräytyy yksilöllisesti jokaiselle
+              kakulle erikseen. Hinnat alkaen
+              <b>65€</b> (sis. alv 14%). Periaatteeni on, että kakuissa on runsaasti täytettä, ne ovat juuri sopivan kosteita
+              ja sisältävät mahdollisimman vähän sokeria. Täytevaihtoehdot ovat rajattomat, mutta erityisen suosittuja ovat
+              olleet vadelma, valkosuklaa, tummasuklaa, mustikka-kardemumma, mansikka-lime ja mango. Teen myös kakkuja ruoka-aineallergiat
+              huomioiden, mutta samoissa tiloissa käsitellään normaaleja tuotteita, joten esimerkiksi täyttä gluteenittomuutta
+              en pysty takaamaan.
             </p>
           </div>
-          <div class="col-lg-5 mr-auto">
-            <img class="img-fluid selection-img" src="https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb"
-              alt="cake">
+          <div class="col-lg-4 selection-text-container">
+            <h3 class="selection-sub-heading">Muut makeat</h3>
+            <p class="selection-text">
+              Leivon mielelläni kakkujen lisäksi myös muita makeita leivonnaisia kuten kuppikakkuja, marenkeja, amerikkalaisia cookieta
+              ja piirakoita. Kuppikakut alkaen
+              <b>3,50€ kpl</b> (sis.alv 14%) (minimitilaus 12kpl). Kysy tarjousta makeista leivonnaisista.
+            </p>
+          </div>
+          <div class="col-lg-4 selection-text-container">
+            <h3 class="selection-sub-heading">Voileipäkakut</h3>
+            <p class="selection-text">
+              Voileipäkakut valmistetaan aina pyöreinä itsetehtyyn leipään ruoka-hävikin minimoimiseksi. Makuvaihtoehtoina ovat kinkku,
+              lohi, tex-mex kana ja kasvis. Hinnat alkaen
+              <b>65€</b> (sis. alv 14%).
+            </p>
           </div>
         </div>
-        <div class="row selection-row">
-          <div class="col-lg-5 mr-auto order-lg-2">
-            <h3 class="selection-sub-heading">Kakku 2</h3>
-            <p class="selection-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mauris quam, aliquam pretium consequat congue, rhoncus
-              sit amet ante. Morbi quis ligula lectus. In accumsan aliquet urna, eget tincidunt lorem ornare in. Vestibulum
-              vitae ipsum sed enim pellentesque auctor ut ac dui. Aliquam sodales risus tellus, sed vehicula mauris lobortis
-              sit amet. Nunc dictum porttitor rhoncus.
-            </p>
+        <div class="container selection-gallery-container">
+          <div class="row selection-gallery-row">
+            <div class="col-md-4 col-sm-12 selection-img-container">
+              <img class="img-fluid selection-img" src="content/images/selection1.jpg" alt="cake">
+            </div>
+            <div class="col-md-4 col-sm-12 selection-img-container">
+              <img class="img-fluid selection-img" src="content/images/selection3.jpg" alt="cake">
+            </div>
+            <div class="col-md-4 col-sm-12 selection-img-container">
+              <img class="img-fluid selection-img" src="content/images/selection5.jpg" alt="cake">
+            </div>
           </div>
-          <div class="col-lg-5 ml-auto order-lg-1">
-            <img class="img-fluid selection-img" src="https://images.pexels.com/photos/2226/food-couple-sweet-married.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb"
-              alt="cake">
-          </div>
-        </div>
-        <div class="row selection-row">
-          <div class="col-lg-5 ml-auto">
-            <h3 class="selection-sub-heading">Kakku 3</h3>
-            <p class="selection-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mauris quam, aliquam pretium consequat congue, rhoncus
-              sit amet ante. Morbi quis ligula lectus. In accumsan aliquet urna, eget tincidunt lorem ornare in. Vestibulum
-              vitae ipsum sed enim pellentesque auctor ut ac dui. Aliquam sodales risus tellus, sed vehicula mauris lobortis
-              sit amet. Nunc dictum porttitor rhoncus.
-            </p>
-          </div>
-          <div class="col-lg-5 mr-auto ">
-            <img class="img-fluid selection-img" src="https://images.pexels.com/photos/416534/pexels-photo-416534.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb"
-              alt="cake">
+          <div class="row selection-gallery-row">
+            <div class="col-md-4 col-sm-12 selection-img-container">
+              <img class="img-fluid selection-img" src="content/images/selection2.jpg" alt="cake">
+            </div>
+            <div class="col-md-4 col-sm-12 selection-img-container">
+              <img class="img-fluid selection-img" src="content/images/selection4.jpg" alt="cake">
+            </div>
+            <div class="col-md-4 col-sm-12 selection-img-container">
+              <img class="img-fluid selection-img" src="content/images/selection6.jpg" alt="cake">
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <section id="delivery">
@@ -163,18 +175,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg">
-          <p class="delivery-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mauris quam, aliquam pretium consequat congue, rhoncus
-            sit amet ante. Morbi quis ligula lectus. In accumsan aliquet urna, eget tincidunt lorem ornare in. Vestibulum
-            vitae ipsum sed enim pellentesque auctor ut ac dui. Aliquam sodales risus tellus, sed vehicula mauris lobortis
-            sit amet. Nunc dictum porttitor rhoncus. Donec imperdiet odio ut varius luctus. Pellentesque nec magna ullamcorper,
-            condimentum mauris in, mattis magna. Maecenas venenatis in justo quis bibendum. Proin tortor leo, ultricies eget
-            metus mattis, mollis convallis ipsum. Maecenas lobortis orci nunc, at hendrerit magna rutrum quis. In tristique
-            nulla sapien, vitae ultrices neque porta eu. Donec at vehicula nisi, quis porta orci. Aenean sed ex suscipit,
-            eleifend diam sit amet, fringilla risus. Duis aliquam dictum lorem.
-          </p>
-        </div>
+        <p class="col-lg delivery-text">
+          Pilvilinnan leipomo on kotileipomo, joka sijaitsee meidän kotikeittiössä. Tämän vuoksi teen kakkuja toistaiseksi vain tilauksesta
+          ja rajatun määrän viikossa. Oma tilaus kannattaa jättää siis hyvissä ajoin. Usein pystyn tekemään kakun tai muun
+          leivonnaisen myös hyvin lyhyellä varoajalla. Kannattaa aina kysyä!
+          <br>
+          <br> Koska tilat sijaitsevat kotona ja toimin yksin, johtaa minun tai perheenjäsenen sairastuminen aina jo tehdyn tilauksen
+          peruuttamiseen leipurin toimesta. Tällöin asiakkaalta ei veloiteta mitään.
+          <br>
+          <br> Kakut maksetaan tilisiirrolla niin, että maksu näkyy tililläni viimeistään 3 päivää ennen kakun noutoa. Maksun
+          voi suorittaa myös käteisellä kakun noudon yhteydessä. Jo tehdyn tilauksen voi peruuttaa viimeistään 3 päivää ennen
+          tilauksen noutoa. Tämän jälkeen kakuista veloitetaan raaka-ainekustannukset.
+          <br>
+          <br> Kakut noudetaan sovittuna ajankohtana leipomolta. Saadessaan kakun leipomolta vastuu kakun kuljetuksesta ja oikeaoppisesta
+          säilytyksestä siirtyy asiakkaalle. Kuljetuksessa kannattaa huomioida varovaisuus. Kakut tarvitsevat kuljetuksessa
+          tasaisen alustan esim. auton takakontin/jalkatilan. Kesähelteellä kannattaa muistaa suojata kakut liialta kuumuudelta.
+        </p>
       </div>
     </div>
   </section>
@@ -187,32 +203,38 @@
         </div>
       </div>
       <div class="row contact-row">
-        <div class="contact-detail">
-          <i class="fa fa-fw fa-lg fa-envelope"></i>
-          <p>
+        <div class="col-lg-6">
+          <div class="contact-detail">
+            <p class="contact-detail-header">Email</p>
             <a href="mailto:&#112;&#105;&#108;&#118;&#105;&#108;&#105;&#110;&#110;&#097;&#110;&#108;&#101;&#105;&#112;&#111;&#109;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
               &#112;&#105;&#108;&#118;&#105;&#108;&#105;&#110;&#110;&#097;&#110;&#108;&#101;&#105;&#112;&#111;&#109;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
             </a>
-          </p>
-        </div>
-        <div class="contact-detail">
-          <i class="fa fa-fw fa-lg fa-phone"></i>
-          <p>+358 40 0000000</p>
+          </div>
+          <div class="contact-detail contact-detail-pad-top">
+            <p class="contact-detail-header">Puhelin</p>
+            <p class="contact-detail-text">+358 40 0000000</p>
+          </div>
+          <div class="contact-detail contact-detail-pad-top">
+            <p class="contact-detail-header">Yritys</p>
+            <p class="contact-detail-text">Pilvilinnan leipomo/Tmi Anna Jaatinen (2507048-6)</p>
+          </div>
         </div>
       </div>
       <div class="row social-media-row">
-        <ul class="list-inline ">
-          <li>
-            <a href="https://www.facebook.com/anna.jaatinen.1" class="social-media-link">
-              <i class="fa fa-fw fa-2x fa-facebook "></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/pilvilinnan_anna/" class="social-media-link">
-              <i class="fa fa-fw fa-2x fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
+        <div class="col-lg-6">
+          <ul class="list-inline ">
+            <li>
+              <a href="https://www.facebook.com/Pilvilinnan-leipomo-1541890192566923/" class="social-media-link">
+                <i class="fa fa-fw fa-2x fa-facebook "></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/pilvilinnan_anna/" class="social-media-link">
+                <i class="fa fa-fw fa-2x fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>

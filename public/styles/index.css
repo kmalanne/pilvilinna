@@ -2,11 +2,11 @@
   margin:  0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Alice', serif;
+  font-family: 'Montserrat', sans-serif, system;
+  color: #2F2E2E;
 }
 
 html {
-  font-family: 'Alice', serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
 }
@@ -50,23 +50,27 @@ section h2 {
 }
 
 .carousel-item-1 {
-  background-image: url('https://images.pexels.com/photos/353347/pexels-photo-353347.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb');
+  background-image: url('../content/images/carousel1.jpg');
 }
 
 .carousel-item-2 {
-  background-image: url('https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb');
+  background-image: url('../content/images/carousel2.jpg');
 }
 
 .carousel-item-3 {
-  background-image: url('https://images.pexels.com/photos/302561/pexels-photo-302561.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb');
+  background-image: url('../content/images/carousel3.jpg');
 }
 
 .carousel-item-4 {
-  background-image: url('https://images.pexels.com/photos/159887/pexels-photo-159887.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb');
+  background-image: url('../content/images/carousel4.jpg');
 }
 
 .carousel-item-5 {
-  background-image: url('https://images.pexels.com/photos/6431/food-sweet-cake-glace-icing.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb');
+  background-image: url('../content/images/carousel5.jpg');
+}
+
+.carousel-item-6 {
+  background-image: url('../content/images/carousel6.jpg');
 }
 
 .carousel-indicators--round li {
@@ -86,21 +90,23 @@ section h2 {
 }
 
 .carousel-caption {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 
 .carousel-link-btn {
   font-size: 140%;
   color: #fff;
   text-decoration: none;
-  padding: 30px 50px;
-  border: 2px solid #fff;
+  padding: 25px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: background-color 0.8s, color 0.5s;
 }
 
 .carousel-link-btn:hover {
-  color: #000;
+  color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
 }
 
 /* Info */
@@ -108,6 +114,8 @@ section h2 {
   display: flex; 
   justify-content: center;
   align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .info-img {
@@ -117,13 +125,20 @@ section h2 {
 
 .info-text {
   font-size: 120%;
-  padding: 0 50px;
-  text-align: justify;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.info-text-signature {
+  margin-top: 10px;
+  font-size: 140%;
+  font-style: italic;
+  text-align: center;
 }
 
 /* Selection and pricing */
 #selection-and-pricing {
-  background-color: #fff0f2;
+  background-color: #e1e1e1;
 }
 
 #selection-and-pricing .container {
@@ -136,12 +151,24 @@ section h2 {
 }
 
 .selection-text {
-  font-size: 110%;
-  text-align: justify;
+  font-size: 120%;
+}
+
+.selection-gallery-row {
+  margin-top: 30px;
+}
+
+.selection-img-container {
+  overflow: hidden;
 }
 
 .selection-img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+}
+
+.selection-img:hover {
+  opacity: 0.6;
+  transform: scale(1.01);
 }
 
 .selection-sub-heading {
@@ -153,27 +180,32 @@ section h2 {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 120%;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Contact */
 #contact {
-  background-color: #fff0f2;
+  background-color: #e1e1e1;
 }
 
 .contact-row {
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 30px;
 }
 
 .contact-detail {
-  display: flex;
+  /* display: flex; */
+}
+
+.contact-detail-header {
+  font-size: 80%;
+  margin-bottom: 5px;
+  color: #000;
 }
 
 .contact-detail i {
-  margin-top: 5px;
+  margin-top: 8px;
   margin-right: 3px;
 }
 
@@ -183,8 +215,13 @@ section h2 {
   font-size: 110%;
 }
 
-.contact-detail p {
-  font-size: 120%;
+.contact-detail-text {
+  font-size: 110%;
+  margin-bottom: 0px;
+}
+
+.contact-detail-pad-top {
+  margin-top: 15px;
 }
 
 .social-media-row {
@@ -196,25 +233,15 @@ section h2 {
 }
 
 .list-inline li {
-  background-color: #fff;
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-  line-height: 70px;
-  padding-left: 7px;
   margin: 0px 5px
 }
 
-.list-inline li:hover {
-  background-color: #ffb6c1;
-}
-
 .social-media-link {
-  color: #000;
+  color: #2F2E2E;;
 }
 
-.list-inline li:hover > .social-media-link {
-  color: #fff;
+.social-media-link i:hover {
+  color: #fff;;
 }
 
 /* Footer */
@@ -249,5 +276,74 @@ section h2 {
 
   .delivery-text {
     padding: 0px;
+  }
+}
+
+@media (max-width: 991px) { 
+  .info-img {
+    max-width: 50%;
+  }
+
+  .info-text {
+    margin-top: 50px;
+    padding: 0px;
+  }
+
+  .selection-row {
+    margin: 0px;
+  }
+
+  .selection-img {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .delivery-text {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  section h2 {
+    font-size: 200%;
+  }
+  
+  .carousel-caption {
+    margin-bottom: 70px;
+  }
+
+  .carousel-link-btn {
+    font-size: 100%;
+    padding: 20px 40px;
+  }
+
+  .info-img {
+    max-width: 90%;
+  }
+
+  .info-text,
+  .selection-text,
+  .delivery-text {
+    font-size: 80%;
+  }
+
+  .selection-text-container,
+  .selection-img-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .selection-img {
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+
+  .contact-detail a {
+    font-size: 90%;
+  }
+
+  .contact-detail p {
+    font-size: 90%;
+    padding-top: 3px;
   }
 }
