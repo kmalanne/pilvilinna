@@ -141,17 +141,21 @@ section h2 {
   background-color: #e1e1e1;
 }
 
-#selection-and-pricing .container {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.selection-row {
-  margin: 70px 0px;
+.selection-disclaimer {
+  font-size: 100%;
+  text-align: justify;
+  margin-bottom: 30px;
 }
 
 .selection-text {
-  font-size: 120%;
+  font-size: 110%;
+  text-align: justify;
+}
+
+.selection-price {
+  text-align: center;
+  font-style: italic;
+  font-size: 110%;
 }
 
 .selection-gallery-row {
@@ -173,6 +177,8 @@ section h2 {
 
 .selection-sub-heading {
   font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Delivery */
@@ -180,7 +186,7 @@ section h2 {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 120%;
-  text-align: center;
+  text-align: justify;
 }
 
 /* Contact */
@@ -195,18 +201,14 @@ section h2 {
 }
 
 .contact-detail {
-  /* display: flex; */
+  text-align: center;
 }
 
 .contact-detail-header {
-  font-size: 80%;
+  font-size: 120%;
   margin-bottom: 5px;
   color: #000;
-}
-
-.contact-detail i {
-  margin-top: 8px;
-  margin-right: 3px;
+  font-weight: 600;
 }
 
 .contact-detail a {
@@ -220,12 +222,10 @@ section h2 {
   margin-bottom: 0px;
 }
 
-.contact-detail-pad-top {
-  margin-top: 15px;
-}
-
 .social-media-row {
+  margin-top: 60px;
   justify-content: center;
+  text-align: center;
 }
 
 .list-inline {
@@ -265,41 +265,20 @@ section h2 {
     padding: 0px;
   }
 
-  .selection-row {
-    margin: 0px;
-  }
-
-  .selection-img {
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-
-  .delivery-text {
-    padding: 0px;
-  }
-}
-
-@media (max-width: 991px) { 
-  .info-img {
-    max-width: 50%;
-  }
-
-  .info-text {
-    margin-top: 50px;
-    padding: 0px;
-  }
-
-  .selection-row {
-    margin: 0px;
-  }
-
-  .selection-img {
-    margin-top: 30px;
-    margin-bottom: 50px;
+  .selection-container,
+  .selection-text-container,
+  .selection-disclaimer-container {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .delivery-text {
     padding: 0px;
+  }
+
+  .contact-detail a,
+  .contact-detail-text  {
+    font-size: 100%;
   }
 }
 
@@ -322,15 +301,28 @@ section h2 {
   }
 
   .info-text,
-  .selection-text,
-  .delivery-text {
-    font-size: 80%;
+  .delivery-text,
+  .selection-disclaimer,
+  .selection-text {
+    font-size: 90%;
+    text-align: center;
   }
 
+  .selection-container,
   .selection-text-container,
-  .selection-img-container {
+  .selection-img-container,
+  .selection-disclaimer-container {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .selection-price {
+    font-size: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .selection-gallery-row {
+    margin-top: 0px;
   }
 
   .selection-img {
@@ -338,12 +330,17 @@ section h2 {
     margin-bottom: 25px;
   }
 
-  .contact-detail a {
+  .contact-detail {
+    margin-bottom: 10px;
+  }
+
+  .contact-detail a,
+  .contact-detail p {
     font-size: 90%;
   }
 
-  .contact-detail p {
-    font-size: 90%;
-    padding-top: 3px;
+  .copyright-row p {
+    font-size: 70%;
+    margin-bottom: 0px;
   }
 }
