@@ -99,6 +99,12 @@ section h2 {
   margin-bottom: 200px;
 }
 
+.carousel-caption h1 {
+  font-size: 5rem;
+  margin-bottom: 150px;
+  font-weight: 600;
+}
+
 .carousel-link-btn {
   font-size: 140%;
   color: #fff;
@@ -289,6 +295,10 @@ section h2 {
 }
 
 @media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 4.5rem
+  }
+
   .selection-img {
     padding-bottom: 30px;
   }
@@ -308,7 +318,11 @@ section h2 {
   }
   
   .carousel-caption {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.7rem
   }
 
   .carousel-link-btn {
