@@ -11,7 +11,7 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-section {
+section:not(#home) {
   padding: 80px 30px 80px 30px;
 }
 
@@ -24,6 +24,12 @@ section h2 {
 /* Navigation */
 .navbar {
   background: rgba(255, 255, 255, 0.95);
+  transition-duration: 0.6s;
+}
+
+.navbar-scroll-custom {
+  transform: translateY(-56px);
+  transition-duration: 0.6s;		
 }
 
 .navbar-light .navbar-toggler {
@@ -282,6 +288,20 @@ section h2 {
   }
 }
 
+@media (max-width: 768px) {
+  .selection-img {
+    padding-bottom: 30px;
+  }
+
+  .selection-gallery-row {
+    margin-top: 0px;
+  }
+
+  .contact-detail {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 575px) {
   section h2 {
     font-size: 200%;
@@ -327,7 +347,6 @@ section h2 {
 
   .selection-img {
     margin-top: 0px;
-    margin-bottom: 25px;
   }
 
   .contact-detail {

@@ -11,11 +11,15 @@ $(document).ready(function () {
         });
     });
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 100) {
-            $('.navbar').fadeOut();
+    var lastScrollTop = 0;
+    var navbar = $('.navbar');
+    $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+            navbar.addClass('navbar-scroll-custom');
         } else {
-            $('.navbar').fadeIn();
+            navbar.removeClass('navbar-scroll-custom');
         }
-    }, false);
+        lastScrollTop = st;
+    });
 });
