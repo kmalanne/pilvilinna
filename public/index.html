@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/featherlight.min.css">
   <link rel="stylesheet" type="text/css" href="styles/index.css">
   <link rel="icon" href="icon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
@@ -41,7 +42,7 @@
   </header>
 
   <section id="home">
-    <div id="carousel-landing" class="carousel slide" data-ride="carousel" data-interval="3500">
+    <div id="carousel-landing" class="carousel slide" data-ride="carousel" data-interval="6000">
       <ol class="carousel-indicators carousel-indicators--round">
         <li data-target="#carousel-landing" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-landing" data-slide-to="1"></li>
@@ -52,10 +53,6 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active carousel-item-1">
-          <div class="carousel-caption">
-            <h1>Pilvilinnan leipomo</h1>
-            <a class="carousel-link-btn" href="#contact">OTA YHTEYTTÄ</a>
-          </div>
         </div>
         <div class="carousel-item carousel-item-2">
         </div>
@@ -76,6 +73,10 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+    </div>
+    <div class="carousel-caption">
+      <h1>Pilvilinnan leipomo</h1>
+      <a class="carousel-link-btn" href="#contact">OTA YHTEYTTÄ</a>
     </div>
   </section>
 
@@ -141,6 +142,16 @@
             </p>
           </div>
           <div class="col-lg-4 selection-text-container">
+            <h3 class="selection-sub-heading">Voileipäkakut</h3>
+            <p class="selection-text">
+              Makuvaihtoehtoina ovat kinkku, lohi, tex-mex kana ja kasvis.
+            </p>
+            <p class="selection-price">
+              Hinnat alkaen
+              <b>65€</b> (sis. alv 14%).
+            </p>
+          </div>
+          <div class="col-lg-4 selection-text-container">
             <h3 class="selection-sub-heading">Muut makeat</h3>
             <p class="selection-text">
               Leivon mielelläni kakkujen lisäksi myös muita makeita leivonnaisia kuten kuppikakkuja, marenkeja, amerikkalaisia cookieta,
@@ -151,44 +162,41 @@
               <b>3,50€</b> kpl (sis. alv 14%) (minimitilaus 12kpl).
             </p>
           </div>
-          <div class="col-lg-4 selection-text-container">
-            <h3 class="selection-sub-heading">Voileipäkakut</h3>
-            <p class="selection-text">
-              Makuvaihtoehtoina ovat kinkku, lohi, tex-mex kana ja kasvis.
-            </p>
-            <p class="selection-price">
-              Hinnat alkaen
-              <b>65€</b> (sis. alv 14%).
-            </p>
-          </div>
         </div>
         <div class="row">
           <div class="container selection-gallery-container">
             <div class="row selection-gallery-row">
               <div class="col-md-4 col-sm-12 selection-img-container">
-                <img class="img-fluid selection-img" src="content/images/selection1.jpg" alt="cake">
+                <img class="img-fluid selection-img" data-featherlight="content/images/selection1.jpg" src="content/images/selection1.jpg"
+                  alt="cake">
               </div>
               <div class="col-md-4 col-sm-12 selection-img-container">
-                <img class="img-fluid selection-img" src="content/images/selection3.jpg" alt="cake">
+                <img class="img-fluid selection-img" data-featherlight="content/images/selection3.jpg" src="content/images/selection3.jpg"
+                  alt="cake">
               </div>
               <div class="col-md-4 col-sm-12 selection-img-container">
-                <img class="img-fluid selection-img" src="content/images/selection5.jpg" alt="cake">
+                <img class="img-fluid selection-img" data-featherlight="content/images/selection5.jpg" src="content/images/selection5.jpg"
+                  alt="cake">
               </div>
             </div>
             <div class="row selection-gallery-row">
               <div class="col-md-4 col-sm-12 selection-img-container">
-                <img class="img-fluid selection-img" src="content/images/selection2.jpg" alt="cake">
+                <img class="img-fluid selection-img" data-featherlight="content/images/selection2.jpg" src="content/images/selection2.jpg"
+                  alt="cake">
               </div>
               <div class="col-md-4 col-sm-12 selection-img-container">
-                <img class="img-fluid selection-img" src="content/images/selection4.jpg" alt="cake">
+                <img class="img-fluid selection-img" data-featherlight="content/images/selection4.jpg" src="content/images/selection4.jpg"
+                  alt="cake">
               </div>
               <div class="col-md-4 col-sm-12 selection-img-container">
-                <img class="img-fluid selection-img" src="content/images/selection6.jpg" alt="cake">
+                <img class="img-fluid selection-img" data-featherlight="content/images/selection6.jpg" src="content/images/selection6.jpg"
+                  alt="cake">
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <section id="delivery">
@@ -250,23 +258,22 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row social-media-row">
-      <div class="col-lg-6">
-        <ul class="list-inline">
-          <li>
-            <a href="https://www.facebook.com/Pilvilinnan-leipomo-1541890192566923/" class="social-media-link">
-              <i class="fa fa-fw fa-2x fa-facebook "></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/pilvilinnan_anna/" class="social-media-link">
-              <i class="fa fa-fw fa-2x fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="row social-media-row">
+        <div class="col-lg-6">
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.facebook.com/Pilvilinnan-leipomo-1541890192566923/" class="social-media-link">
+                <i class="fa fa-fw fa-2x fa-facebook "></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/pilvilinnan_anna/" class="social-media-link">
+                <i class="fa fa-fw fa-2x fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -285,6 +292,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
     crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/be8d62b33b.js"></script>
+  <script src="src/featherlight.min.js"></script>
   <script src="src/index.js"></script>
 </body>
 

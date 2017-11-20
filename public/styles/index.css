@@ -8,11 +8,10 @@
 
 html {
   font-size: 16px;
-  text-rendering: optimizeLegibility;
 }
 
 section:not(#home) {
-  padding: 80px 30px 80px 30px;
+  padding: 80px 50px 80px 50px;
 }
 
 section h2 {
@@ -50,9 +49,6 @@ section h2 {
   min-height: 300px;
   background: no-repeat center center scroll;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 .carousel-item-1 {
@@ -150,24 +146,12 @@ section h2 {
 
 /* Selection and pricing */
 #selection-and-pricing {
-  background-color: #e1e1e1;
+  background-color: #f0f0f0;
+  font-size: 120%;
 }
 
 .selection-disclaimer {
-  font-size: 100%;
-  text-align: justify;
   margin-bottom: 30px;
-}
-
-.selection-text {
-  font-size: 110%;
-  text-align: justify;
-}
-
-.selection-price {
-  text-align: center;
-  font-style: italic;
-  font-size: 110%;
 }
 
 .selection-gallery-row {
@@ -176,9 +160,11 @@ section h2 {
 
 .selection-img-container {
   overflow: hidden;
+  cursor: pointer;
 }
 
 .selection-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.3s ease-in-out;
 }
 
@@ -195,15 +181,12 @@ section h2 {
 
 /* Delivery */
 .delivery-text {
-  padding-left: 30px;
-  padding-right: 30px;
   font-size: 120%;
-  text-align: justify;
 }
 
 /* Contact */
 #contact {
-  background-color: #e1e1e1;
+  background-color: #f0f0f0;
 }
 
 .contact-row {
@@ -226,11 +209,11 @@ section h2 {
 .contact-detail a {
   text-decoration: none;
   color: #212529;
-  font-size: 110%;
+  font-size: 120%;
 }
 
 .contact-detail-text {
-  font-size: 110%;
+  font-size: 120%;
   margin-bottom: 0px;
 }
 
@@ -267,6 +250,13 @@ section h2 {
   margin-bottom: 0px;
 }
 
+@media (min-width: 1200px) {
+  .carousel-caption h1 {
+    font-size: 6.5rem;
+    margin-bottom: 180px;
+  }
+}
+
 @media (max-width: 991px) { 
   .info-img {
     max-width: 50%;
@@ -296,7 +286,7 @@ section h2 {
 
 @media (max-width: 768px) {
   .carousel-caption h1 {
-    font-size: 4.5rem
+    font-size: 4.5rem;
   }
 
   .selection-img {
@@ -322,7 +312,8 @@ section h2 {
   }
 
   .carousel-caption h1 {
-    font-size: 2.7rem
+    font-size: 2.7rem;
+    margin-bottom: 130px;
   }
 
   .carousel-link-btn {
@@ -339,7 +330,6 @@ section h2 {
   .selection-disclaimer,
   .selection-text {
     font-size: 90%;
-    text-align: center;
   }
 
   .selection-container,
